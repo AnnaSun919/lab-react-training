@@ -1,0 +1,32 @@
+.creditCard{
+  width: 18rem;
+  height: 10.5rem;
+border-radius: 10px;
+margin: 20px;
+
+}
+
+.creditCard img{
+  width: 3.2rem;
+  height: 1.5rem;
+  float: right;
+  margin: 18px;
+}
+
+
+.cardNumber{
+position: absolute;
+margin-top: 4rem;
+margin-left: 3rem;
+font-size: 25px;
+
+}
+
+.creditCard p {
+  position: absolute;
+margin-top: 7rem;
+margin-left: 1.5rem;
+
+}
+
+
