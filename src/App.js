@@ -6,6 +6,7 @@ import Greetings from './component/Greeting';
 import IdCard from './component/id';
 import Random from './component/Random';
 import CreditCard from './component/CreditCard';
+import Rating from './component/Rating';
 function App() {
   return (
     <div>
@@ -52,6 +53,13 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
+
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
     </div>
   );
 }
