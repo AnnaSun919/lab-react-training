@@ -7,6 +7,11 @@ import IdCard from './component/id';
 import Random from './component/Random';
 import CreditCard from './component/CreditCard';
 import Rating from './component/Rating';
+import DriverCard from './component/DriverCard';
+import LikeButton from './component/LikeButton';
+import Dice from './component/Dice';
+import Carousel from './component/Carosel';
+
 function App() {
   return (
     <div>
@@ -31,7 +36,6 @@ function App() {
       <Random min={1} max={100} />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -42,7 +46,6 @@ function App() {
         bgColor="#11aa99"
         color="white"
       />
-
       <CreditCard
         type="Master Card"
         number="0123456789010995"
@@ -53,13 +56,41 @@ function App() {
         bgColor="#eeeeee"
         color="#222222"
       />
-
+      Rating
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+      <LikeButton />
+      <Dice />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }
